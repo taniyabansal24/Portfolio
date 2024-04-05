@@ -535,7 +535,7 @@ section{
 .layer.one,
 .layer.two,
 .layer.three,
-.layer.foure{
+.layer.four {
     width: 100%;
     height: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(2, 17, 19));
