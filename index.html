@@ -13,38 +13,49 @@
 <body>
   <header class="header">
     <a href="#" class="logo">Portfolio</a>
-
-    <nav class="navbar">
-      <a href="#home" style="--i: 1" class="active">Home</a>
-      <a href="#about" style="--i: 2">About</a>
-      <a href="#services" style="--i: 3">Skills</a>
-      <a href="#skills" style="--i: 4">Portfolio</a>
-      <a href="#contact" style="--i: 5">Contact</a>
-      <button class="menu-btn" onclick="">
-        <span class="material-symbols-outlined" style="font-size: 1.8rem;"><i class='bx bx-menu' ></i></span>
-      </button>
     
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <ul>
+        <li class="hideOnMobile"><a href="#home">Home</a></li>
+        <li class="hideOnMobile"><a href="#about">About</a></li>
+        <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+        <li class="hideOnMobile"><a href="#portfolio">Portfolio</a></li>
+        <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+      </ul>
     </nav>
+
   </header>
-  <section class="home img">
-    <div class="home-content">
-      <h3>Hello, It's Me</h3>
-      <h1>Taniya Bansal</h1>
-      <h3>And I'm a <span class="text"></span></h3>
-      <p>
-        Versatile full-stack web developer and IIT Patna student. <br />adept
-        at crafting dynamic and user-centric web solutions.
-      </p>
-      <div class="home-sci">
-        <a href="mailto:taniya1agarwal@gmail.com" style="--i: 7"><i class="bx bxl-gmail"></i></a>
-        <a href="https://www.linkedin.com/in/taniya-bansal-33873b2a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-          style="--i: 8"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://www.instagram.com/taniyabansal24?igsh=dmd3ZndtMTdkZmF3" style="--i: 9"><i
-            class="bx bxl-instagram-alt"></i></a>
-        <a href="https://github.com/taniyabansal24" style="--i: 10"><i class="bx bxl-github"></i></a>
-      </div>
-      <a href="#" class="btn-box">More about Me<Meta:redirect></Meta:redirect></a>
+
+  <section class="home img ">
+    <div class="image">
+      <img src="Picsart_24-02-24_14-13-45-858.png" alt="" />
     </div>
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Taniya Bansal</h1>
+        <h3>And I'm a <span class="text">F</span><span class="typed-cursor" aria-hidden="true"></span></h3>
+        <p>
+          Versatile full-stack web developer and IIT Patna student. <br>adept
+          at crafting dynamic and user-centric web solutions.
+        </p>
+        <div class="home-sci">
+          <a href="mailto:taniya1agarwal@gmail.com" style="--i: 7"><i class="bx bxl-gmail"></i></a>
+          <a href="https://www.linkedin.com/in/taniya-bansal-33873b2a8?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app" style="--i: 8"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.instagram.com/taniyabansal24?igsh=dmd3ZndtMTdkZmF3" style="--i: 9"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="https://github.com/taniyabansal24" style="--i: 10"><i class="bx bxl-github"></i></a>
+        </div>
+        <a href="#" class="btn-box">More about Me<meta:redirect></meta:redirect></a>
+      </div>
+
   </section>
 
   <section class="about" id="about">
@@ -72,7 +83,10 @@
 
   <section class="services" id="services">
     <div class="container">
-      <h1 class="sub-tittle">My <span>Services</span></h1>
+      <div class="sub-tittle">
+        <h1 >My <span>Services</span></h1>
+      </div>
+      
       <div class="services-list">
         <div>
           <i class="bx bx-code" style="color: #00eeff"></i>
@@ -112,7 +126,9 @@
     </div>
   </section>
 
-  <h1 class="sub-title">My<span>Skills</span></h1>
+  <div class="sub-tittle" id="services-my">
+    <h1 >My <span>Skills</span></h1>
+  </div>
 
   <section>
 
@@ -177,15 +193,6 @@
           <i style="color: #61dafb" class="bx bxl-react"></i>
           <div class="info">
             <span>React</span>
-          </div>
-          <div class="progress-line react">
-            <span></span>
-          </div>
-        </div>
-        <div class="bar">
-          <i style="color: #61dafb" class="bx bxl-react"></i>
-          <div class="info">
-            <span>Wordpress</span>
           </div>
           <div class="progress-line react">
             <span></span>
@@ -305,7 +312,7 @@
               <h5>Lazarev</h5>
               <p>A visually captivating clone of the Lazarev Name website, featuring intricate animations and transformations, crafted using HTML, CSS, and JavaScript.</p>
                 
-                  <a href="https://taniyabansal24.github.io/Lazarev-Clone/"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                  <a href="https://taniyabansal24.github.io/Lazarev-Clone/"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
             </div>
           </div>
 
