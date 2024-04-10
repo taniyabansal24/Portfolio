@@ -574,7 +574,8 @@ nav a{
 .layer.one,
 .layer.two,
 .layer.three,
-.layer.four {
+.layer.four,
+.layer.five {
     width: 100%;
     height: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(2, 17, 19));
@@ -596,6 +597,15 @@ nav a{
     font-size: 20px;
     font-size: 600;
     margin-bottom: 15px;
+}
+.layer.five h5{
+    color: #000;
+    font-size: 20px;
+    font-size: 600;
+    margin-bottom: 15px;
+}
+.layer.five p{
+    color: #000;
 }
 .layer.three h5{
     color: #000;
